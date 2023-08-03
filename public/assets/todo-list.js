@@ -20,15 +20,26 @@ $(document).ready(function(){
   });
 
   $('li').on('click', function(){
-      var item = $(this).text().replace(/ /g, "-");
+      var item = $(this).text().replace(/ /g, "");
+      alert(item);
       $.ajax({
         type: 'DELETE',
         url: '/todo/' + item,
         success: function(data){
+          console.log(data);
           //do something with the data via front-end framework
-          location.reload();
+          location.reload ();
+        },
+        error: function(error){
+          console.log('Error:', error);
         }
       });
   });
+
+  // $('#edit').on('click', function(){
+  //   alert("I am edit");
+  //   var item = $(this).text().replace(/ /g, "");
+  //     alert(item);
+  // });
 
 });
