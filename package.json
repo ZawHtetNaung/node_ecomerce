@@ -8,14 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamshaunjp/node-js-playlist.git"
+    "url": "git+https://github.com/ZawHtetNaung/node_ecomerce.git"
   },
   "author": "me",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamshaunjp/node-js-playlist/issues"
-  },
-  "homepage": "https://github.com/iamshaunjp/node-js-playlist#readme",
+  "license": "ISC",  
   "dependencies": {
     "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
